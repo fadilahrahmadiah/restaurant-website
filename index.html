@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eden</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                </ul>
+            </div>
+            <div class="nav-center">
+                <h1>eden</h1>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li><a href="spaces.html">SPACES</a></li>
+                    <li><a href="reservations.html">RESERVATION</a></li>
+            </div>
+        </nav>
+    </header>
+
+    <br><br><br><br>
+
+    <div class="video-container fade-in">
+        <video loop autoplay muted playsinline>
+            <source src="eden.mp4" type="video/mp4" />
+        </video>
+    </div>
+
+    
+    <div class="containerr fade-in">
+        <div class="content fade-in">
+            <h1>PARADISE ON YOUR PLATE</h1>
+            <p>Crafting unforgettable flavours through the art of eden.</p>
+            <button onclick="window.location.href='menu.html'">VIEW MENU</button>
+        </div>
+    </div>
+
+    <div id="mainContent" style="display: none;">
+        <h2>Welcome back!</h2>
+        <p>Enjoy browsing the site!</p>
+    </div>
+    <div class="about-us-section">
+        <hr class="line">
+        <span class="about-text">AT EDEN</span>
+        <hr class="line">
+        
+    </div>
+    <imagee>
+        <div id="about-us">
+        <div class="container fade-in">
+            <p class="haha">one of everything really good</p>
+            <p class="huhu">
+                At eden, our philosophy is to make one of everything really good. To us, that means a
+                collection of intentional, high-performance essentials you reach for on a daily basis. The ones you
+                love, rely on, and always come back to.
+            </p>
+        </div>
+    </div>
+    </imagee>
+
+    <div class="favorite">
+        <hr class="line">
+        <span class="about-text">THEIR CHOICE</span>
+        <hr class="line">
+        
+    </div>
+
+    <div class="favorites-slider fade-in">
+        <button class="prev" onclick="scrollSlider(-1)">&#8249;</button>
+        <div class="slider-container">
+            <div class="slide">
+                <img src="menu/food1.jpg" alt="Favorite 1">
+                <p>Jamaican Jerk Chicken</p>
+            </div>
+            <div class="slide">
+                <img src="menu/food2.jpg" alt="Favorite 2">
+                <p>Veg Italian Pasta</p>
+            </div>
+            <div class="slide">
+                <img src="menu/food4.jpg" alt="Favorite 3">
+                <p>Moroccan Meatballs</p>
+            </div>
+            <div class="slide">
+                <img src="menu/food12.jpg" alt="Favorite 4">
+                <p>Fried Rice</p>
+            </div>
+            <div class="slide">
+                <img src="menu/food5.jpg" alt="Favorite 5">
+                <p>Vegan Shakshuka</p>
+            </div>
+            <div class="slide">
+                <img src="menu/food6.jpg" alt="Favorite 6">
+                <p>Roasted Lamb</p>
+            </div>
+            <div class="slide">
+                <img src="menu/food7.jpg" alt="Favorite 7">
+                <p>Anticuchos</p>
+            </div>
+            <div class="slide">
+                <img src="menu/food8.jpg" alt="Favorite 8">
+                <p>Thai Ramen</p>
+            </div>
+        </div>
+        <button class="next" onclick="scrollSlider(1)">&#8250;</button>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div class="favorite">
+        <hr class="line">
+        <span class="about-text">WHAT ARE THEY TRYNA SAY</span>
+        <hr class="line">
+    </div>
+    <div class="containermy-4 fade-in">
+        <div class="reviews-container">
+            <!-- Review 1 -->
+            <div class="review">
+                <div class="rating">
+                    <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                </div>
+                <h6>User1</h6>
+                <p>Delicious food! A great place!</p>
+            </div>
+            <!-- Review 2 -->
+            <div class="review">
+                <div class="rating">
+                    <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                </div>
+                <h6>User2</h6>
+                <p>Their service 5/5</p>
+            </div>
+            <div class="review">
+                <div class="rating">
+                    <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                </div>
+                <h6>User3</h6>
+                <p>Will come here again!</p>
+            </div>
+            <!-- Review 4 -->
+            <div class="review">
+                <div class="rating">
+                    <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                </div>
+                <h6>User4</h6>
+                <p>Pricey but worth it</p>
+            </div>
+            <div class="review">
+                <div class="rating">
+                    <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                </div>
+                <h6>User5</h6>
+                <p>Cool</p>
+            </div>
+            <div class="review">
+                <div class="rating">
+                    <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                </div>
+                <h6>User6</h6>
+                <p>My comfy place</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <a href="contact.html" class="con">
+        <p>Contact Us</p>
+    </a>
+    
+
+
+    <footer>
+        <p>Copyright © 2024 Eden - All Rights Reserved. </p>
+    </footer>
+
+</body>
+
+</html>

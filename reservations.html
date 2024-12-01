@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eden</title>
+    <link rel="stylesheet" href="stylee.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                </ul>
+            </div>
+            <div class="nav-center">
+                <h1>eden</h1>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li><a href="spaces.html">SPACES</a></li>
+                    <li><a href="reservations.html">RESERVATION</a></li>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div class="reserv">
+    <div class="container2">
+        </div>
+        <div class="filters">
+            <div class="filter">
+                <label for="guests">Guests</label>
+                <select id="guests" onchange="updateTimeOptions()">
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="filter">
+                <label for="time">Time</label>
+                <select id="time">
+                    <option value="all">All Times</option>
+                </select>
+            </div>
+            <div class="filter">
+                <label for="date">Date</label>
+                <select id="date">
+                    <option value="today">Today, 30 Nov</option>
+                    <option value="tomorrow">Tomorrow, 1 Dec</option>
+                    <option value="next-week">Next Week</option>
+                </select>
+            </div>
+        </div>
+        <div class="center-container">
+        <div class="commitment">
+            Our commitment to your safety
+        </div>
+    </div>
+        <div class="times">
+            <div class="time-slot" onclick="selectTime('11:30')">
+                11:30
+                <span>Lunch</span>
+            </div>
+            <div class="time-slot" onclick="selectTime('11:45')">
+                11:45
+                <span>Lunch</span>
+            </div>
+            <div class="time-slot" onclick="selectTime('12:00')">
+                12:00
+                <span>Lunch</span>
+            </div>
+            <div class="time-slot" onclick="selectTime('12:15')">
+                12:15
+                <span>Lunch</span>
+            </div>
+            <div class="time-slot" onclick="selectTime('12:30')">
+                12:30
+                <span>Lunch</span>
+            </div>
+            <div class="time-slot" onclick="selectTime('12:45')">
+                12:45
+                <span>Lunch</span>
+            </div>
+            <div class="time-slot" onclick="selectTime('13:00')">
+                13:00
+                <span>Lunch</span>
+            </div>
+            <div class="time-slot" onclick="selectTime('13:15')">
+                13:15
+                <span>Lunch</span>
+            </div>
+            <div class="time-slot" onclick="selectTime('13:30')">
+                13:30
+                <span>Lunch</span>
+            </div>
+            <div class="time-slot" onclick="selectTime('13:45')">
+                13:45
+                <span>Lunch</span>
+            </div>
+            <div class="time-slot" onclick="selectTime('14:00')">
+                14:00
+                <span>Lunch</span>
+            </div>
+            <div class="time-slot" onclick="selectTime('14:15')">
+                14:15
+                <span>Lunch</span>
+            </div>
+            <div class="time-slot" onclick="selectTime('14:30')">
+                14:30
+                <span>Lunch</span>
+            </div>
+            <div class="time-slot" onclick="selectTime('18:00')">
+                18:00
+                <span>Dinner</span>
+            </div>
+            <div class="time-slot" onclick="selectTime('18:15')">
+                18:15
+                <span>Dinner</span>
+            </div>
+            <div class="time-slot" onclick="selectTime('18:30')">
+                18:30
+                <span>Dinner</span>
+            </div>
+            <div class="time-slot" onclick="selectTime('18:45')">
+                18:45
+                <span>Dinner</span>
+            </div>
+            <div class="time-slot" onclick="selectTime('19:00')">
+                19:00
+                <span>Dinner</span>
+            </div>
+            <div class="time-slot" onclick="selectTime('19:15')">
+                19:15
+                <span>Dinner</span>
+            </div>
+            <div class="time-slot" onclick="selectTime('19:30')">
+                19:30
+                <span>Dinner</span>
+            </div>
+            <div class="time-slot" onclick="selectTime('19:45')">
+                19:45
+                <span>Dinner</span>
+            </div>
+            <div class="time-slot" onclick="selectTime('20:00')">
+                20:00
+                <span>Dinner</span>
+            </div>
+            <div class="time-slot" onclick="selectTime('20:15')">
+                20:15
+                <span>Dinner</span>
+            </div>
+            <div class="time-slot" onclick="selectTime('20:30')">
+                20:30
+                <span>Dinner</span>
+            </div>
+            <div class="time-slot" onclick="selectTime('20:45')">
+                20:45
+                <span>Dinner</span>
+            </div>
+            <div class="time-slot" onclick="selectTime('21:00')">
+                21:00
+                <span>Dinner</span>
+            </div>
+            <div class="time-slot" onclick="selectTime('21:15')">
+                21:15
+                <span>Dinner</span>
+            </div>
+            <div class="time-slot" onclick="selectTime('21:30')">
+                21:30
+                <span>Dinner</span>
+            </div>
+            <div class="time-slot" onclick="selectTime('21:45')">
+                21:45
+                <span>Dinner</span>
+            </div>
+        </div>
+        <div class="sidebar">
+        </div>
+        <div class="center-container">
+        <div class="availability" id="availability"></div>
+        <button class="submit-button" onclick="submitReservation()">Kirim</button>
+    </div>
+    </div>
+</div>
+
+    <footer>
+        <p>Copyright © 2024 Eden - All Rights Reserved. </p>
+    </footer>
+    <script>
+        const timeOptions = {
+            '2': ['11:30', '11:45', '12:00', '12:15', '12:30', '12:45', '13:00', '13:15', '13:30', '13:45', '14:00', '14:15', '14:30'],
+            '3': ['11:30', '11:45', '12:00', '12:15', '12:30', '12:45', '13:00', '13:15', '13:30', '13:45', '14:00', '14:15', '14:30', '18:00', '18:15', '18:30', '18:45', '19:00', '19:15', '19:30', '19:45', '20:00', '20:15', '20:30', '20:45', '21:00', '21:15', '21:30', '21:45'],
+            '4': ['18:00', '18:15', '18:30', '18:45', '19:00', '19:15', '19:30', '19:45', '20:00', '20:15', '20:30', '20:45', '21:00', '21:15', '21:30', '21:45'],
+            '5': ['18:00', '18:15', '18:30', '18:45', '19:00', '19:15', '19:30', '19:45', '20:00', '20:15', '20:30', '20:45', '21:00', '21:15', '21:30', '21:45']
+        };
+
+        let selectedTime = '';
+
+        function updateTimeOptions() {
+            const guestsSelect = document.getElementById('guests');
+            const timeSelect = document.getElementById('time');
+            const selectedGuests = guestsSelect.value;
+
+            timeSelect.innerHTML = '';
+
+            const times = timeOptions[selectedGuests];
+            times.forEach(time => {
+                const option = document.createElement('option');
+                option.value = time;
+                option.textContent = time;
+                timeSelect.appendChild(option);
+            });
+        }
+
+        function selectTime(time) {
+            selectedTime = time;
+            const availabilityDiv = document.getElementById('availability');
+            availabilityDiv.textContent = `You have selected ${time} for your reservation.`;
+        }
+
+        function submitReservation() {
+            const guestsSelect = document.getElementById('guests');
+            const selectedGuests = guestsSelect.value;
+            const dateSelect = document.getElementById('date');
+            const selectedDate = dateSelect.value;
+
+            if (selectedTime) {
+                alert(`Reservation Details:\nDate: ${selectedDate}\nTime: ${selectedTime}\nGuests: ${selectedGuests}`);
+            } else {
+                alert('Silakan pilih waktu terlebih dahulu!');
+            }
+        }
+    </script>
+</body>
+</html>
+

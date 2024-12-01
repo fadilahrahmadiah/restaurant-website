@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="stylee.css">
+    <style>
+        #successMessage {
+            display: none;
+            color: green;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                </ul>
+            </div>
+            <div class="nav-center">
+                <h1>eden</h1>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li><a href="spaces.html">SPACES</a></li>
+                    <li><a href="reservations.html">RESERVATION</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="contact">
+        <div class="favoritee">
+            <hr class="line">
+            <span class="about-text">Contact Us</span>
+            <hr class="line">
+        </div>
+
+        <div class="container">
+            <div class="contact-info">
+                <p>Email: dyla@eden.com</p>
+                <p>Phone: 888-888-888</p>   
+            </div>
+            <div class="form-section">
+                <h2>What You Get When Asking Your Question?</h2>
+                <ul>
+                    <li>Less than 12-hour response to your question.</li>
+                </ul>
+            </div>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="first-name">First Name *</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name *</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group full-width">
+                    <label for="message">How may we help you *</label>
+                    <textarea id="message" name="message" required>Help me understand how I can help you?</textarea>
+                </div>
+                <div class="form-group full-width">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+            <div class="success">
+            <div id="successMessage">Your message has been sent successfully!</div>
+        </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright © 2024 Eden - All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            const successMessage = document.getElementById("successMessage");
+
+            if (successMessage.style.display === "none" || successMessage.style.display === "") {
+                successMessage.style.display = "block"; 
+            } else {
+                successMessage.style.display = "none"; 
+            }
+
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>
