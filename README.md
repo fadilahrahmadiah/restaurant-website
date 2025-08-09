@@ -16,3 +16,6 @@ A simple restaurant landing site built with **HTML**, **CSS**, and **JavaScript*
 - HTML5
 - CSS3
 - Vanilla JavaScript
+
+## Tags
+[![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat&logo=html5&logoColor=white)](https://github.com/search?q=HTML) [![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat&logo=css3&logoColor=white)](https://github.com/search?q=CSS) [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://github.com/search?q=JavaScript) [![Web](https://img.shields.io/badge/Web-FF6F00?style=flat&logo=web&logoColor=white)](https://github.com/search?q=web) [![Restaurant](https://img.shields.io/badge/Restaurant-4CAF50?style=flat)](https://github.com/search?q=restaurant) 
